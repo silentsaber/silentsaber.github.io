@@ -19,7 +19,7 @@ html,body
   width: 100%;
   height: 100%;
   display: flex;
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
   padding-left: 5%;
   /* background: #7F7FD5;   */
   /* background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);   */
@@ -31,24 +31,24 @@ html,body
 .whole_box
 {
   width:80%;
-  height: 80%;
+  height: 100%;
   /* min-height: 80%; */
   position: relative;
 
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 .box_nav
 {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   width: max(5vw,5vh);
   height: max(25vh,16vw);
   margin-left: 2vw;
   position: relative;
   background-color: white;
   text-align: center;
-  padding-top: 2vh;
+  /* padding-top: 2vh; */
   display: flex;
-  padding-bottom: 2vh;
+  /* padding-bottom: 2vh; */
 }
 .button_nav
 {
@@ -131,6 +131,7 @@ html,body
   background: linear-gradient(to bottom, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   color: transparent;
+  /* margin-bottom: 5px; */
 }
 .show_contact
 {

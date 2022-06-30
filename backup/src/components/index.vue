@@ -149,19 +149,23 @@ export default {
   width: 100%;
   font-family: "Comic Sans MS" !important;
   background: #485563 !important;  /* fallback for old browsers */
+  /*! autoprefixer: off */
   background: -webkit-linear-gradient(to right, #29323c, #485563) !important;  /* Chrome 10-25, Safari 5.1-6 */
+   /* autoprefixer: on */
   background: linear-gradient(to right, #29323c, #485563) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  font-size:18px !important;
   color: transparent !important;
+  -webkit-background-clip: text !important;
+  font-size:18px !important;
 }
 .el-collapse-item__header
 {
   background: #00C9FF !important;  /* fallback for old browsers */
+  /*! autoprefixer: off */
   background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF) !important;  /* Chrome 10-25, Safari 5.1-6 */
+   /* autoprefixer: on */
   background: linear-gradient(to bottom, #92FE9D, #00C9FF) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
   color: transparent !important;
+  -webkit-background-clip: text !important;
   /* font-family: "Comic Sans MS"; */
   font-family: "Helvetica Neue" !important;
   font-size: 24px !important;

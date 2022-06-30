@@ -147,24 +147,24 @@ export default {
 {
   margin-top:2vh;
   width: 100%;
-  font-family: "Comic Sans MS";
-  background: #485563;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Comic Sans MS" !important;
+  background: #485563 !important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29323c, #485563) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29323c, #485563) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
-  font-size:18px;
-  color: transparent;
+  font-size:18px !important;
+  color: transparent !important;
 }
 .el-collapse-item__header
 {
-  background: #00C9FF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00C9FF !important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #92FE9D, #00C9FF) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent !important;
   /* font-family: "Comic Sans MS"; */
-  font-family: "Helvetica Neue";
-  font-size: 24px;
+  font-family: "Helvetica Neue" !important;
+  font-size: 24px !important;
 }
 .myimg
 {

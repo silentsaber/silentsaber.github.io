@@ -157,6 +157,10 @@ export default {
   -webkit-background-clip: text !important;
   font-size:18px !important;
 }
+.el-collapse-item__content .el-icon-check
+{
+  display: inline !important;
+}
 .el-collapse-item__header
 {
   background: #00C9FF !important;  /* fallback for old browsers */

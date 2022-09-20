@@ -11,7 +11,7 @@
           </div>
             <div class="box_right">
             <el-card class="show_box" shadow="never" :body-style="{paddingTop:'0px', paddingBottom:'0px',height:'100%', color:'black'}" style="height:100%;">
-              <el-scrollbar class="default-scrollbar" wrap-class="default-scrollbar__wrap" view-class="p20-scrollbar__view">
+              <!-- <el-scrollbar class="default-scrollbar" wrap-class="default-scrollbar__wrap" view-class="p20-scrollbar__view">
               <el-collapse >
                 <div style="height:20px;"></div>
                 <el-collapse-item title="教育背景"> 
@@ -32,7 +32,37 @@
                 </el-collapse-item>
                  <div style="height:20px;"></div>
               </el-collapse>
-              </el-scrollbar>
+              </el-scrollbar> -->
+              <div id="showlist">
+                <div style="height:40px;"></div>
+                <div>
+                    <div class="showtitle"> 教育背景</div>
+                    <div class="showdes"><i class="el-icon-check"></i> 2017 年 8 月-2021 年 7月 清华大学 本科 电子工程系</div>
+                    <div class="showdes"><i class="el-icon-check"></i> 2021 年 8 月-至今 清华大学 博士研究生 通信所 电子工程系</div>
+                    <el-divider></el-divider>
+                </div>
+                <div> 
+                    <div class="showtitle">获奖经历</div>
+                    <div v-for="reward in rewards" class="showdes"><i class="el-icon-check"></i> {{reward}}</div>
+                    <el-divider></el-divider>
+                </div>
+                <div>
+                  <div class="showtitle">职业技能</div>
+                   <div v-for="skill in skills" class="showdes"><i class="el-icon-check"></i> {{skill}}</div>
+                   <el-divider></el-divider>
+                </div>
+                <div>
+                  <div class="showtitle">工作经历</div> 
+                   <div v-for="work in works" class="showdes"><i class="el-icon-check"></i> {{work}}</div>
+                   <el-divider></el-divider>
+                </div>
+                <div >
+                  <div class="showtitle">社工经历</div>
+                   <div v-for="social in socials" class="showdes"><i class="el-icon-check"></i> {{social}}</div> 
+                   <el-divider></el-divider>
+                </div>
+                 <div style="height:20px;"></div>
+              </div>
             </el-card>
             </div>
 
@@ -90,7 +120,7 @@ export default {
 #index
 {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   display: flex;
   justify-content: center;
@@ -126,7 +156,7 @@ export default {
 {
   position: relative;
   width:250px;
-  height:100%;
+  /* height:100%; */
   min-width:120px;
   padding-top:10%;
   justify-content: center;
@@ -139,13 +169,13 @@ export default {
 {
   position: relative;
   width:600px;
-  height:100%;
+  /* height:100%; */
   /* overflow-y: scroll; */
 }
 
-.el-collapse-item__content
+#showlist .showdes
 {
-  margin-top:2vh;
+  /* margin-top:2vh; */
   width: 100%;
   font-family: "Comic Sans MS" !important;
   background: #485563 !important;  /* fallback for old browsers */
@@ -157,11 +187,8 @@ export default {
   -webkit-background-clip: text !important;
   font-size:18px !important;
 }
-.el-collapse-item__content .el-icon-check
-{
-  display: inline !important;
-}
-.el-collapse-item__header
+
+#showlist .showtitle
 {
   background: #00C9FF !important;  /* fallback for old browsers */
   /*! autoprefixer: off */
@@ -173,6 +200,7 @@ export default {
   /* font-family: "Comic Sans MS"; */
   font-family: "Helvetica Neue" !important;
   font-size: 24px !important;
+  margin-bottom: 10px;
 }
 .myimg
 {

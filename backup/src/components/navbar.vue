@@ -1,11 +1,12 @@
 <template>
     <div id="navbar">
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" 
+        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" v-bind:router="true" router
         background-color="#545c64"
         text-color="#fff"
         active-text-color="#ffF">
           <div id="nav_title">Silentsaber</div>
-          <el-menu-item index="1">index</el-menu-item>    
+          <el-menu-item index="/">index</el-menu-item>    
+          <el-menu-item index="/profile">profile</el-menu-item>   
           <div id="spilt"></div>
         </el-menu> 
     </div>
@@ -16,9 +17,16 @@ export default {
     name: "navbar",
     data(){
       return {
-        activeIndex: '1',
+        activeIndex: this.$route.path,
       }
-    }
+    },
+    watch:{
+        $route(to,from){
+            console.log(from);
+            console.log(to);
+            this.activeIndex=to.path;
+        },
+    },
 }
 </script>
 
@@ -26,7 +34,7 @@ export default {
 #navbar
 {
   position: relative;
-  margin-bottom:20px;
+  /* margin-bottom:20px; */
   height: 60px;
   width: 100vw;
   z-index: 1000;
@@ -53,6 +61,10 @@ export default {
 {
   /* left:200px; */
   font-size: 20px;
+}
+.el-menu-demo .el-menu-item.is-active
+{
+  background-color: #909399 !important;
 }
 @keyframes neon2 {
     from {

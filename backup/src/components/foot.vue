@@ -1,6 +1,8 @@
 <template>
     <div id="foot">
-        距今码龄已有{{years}}年~
+        <p>无欲常教心似水，有言自觉气如霜</p>
+        <el-divider direction="vertical"></el-divider>
+        <p>距今码龄已有{{years}}年~</p>
     </div>
 </template>
 
@@ -53,6 +55,11 @@ export default {
     color:#787d82;
     background: black;
     z-index:1;
-    margin-top:20px;
+    /* padding-top:20px; */
+}
+@media (max-width: 700px) {
+    #foot{
+        font-size:14px;
+    }
 }
 </style>

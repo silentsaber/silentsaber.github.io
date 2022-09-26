@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <el-scrollbar  <el-scrollbar class="default-scrollbar" wrap-class="default-scrollbar__wrap" view-class="p20-scrollbar__view">
+    <el-scrollbar class="default-scrollbar" wrap-class="default-scrollbar__wrap" view-class="p20-scrollbar__view">
     <navbar></navbar>
     <router-view/>
     <foot></foot>

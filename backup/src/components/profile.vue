@@ -162,9 +162,10 @@ export default {
   padding-top:10%;
   justify-content: center;
   text-align:center;
-  background: #00C9FF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #232526; 
+  background: -webkit-linear-gradient(to bottom, #414345, #232526); 
+  background: linear-gradient(to bottom, #414345, #232526); 
+ 
 }
 .box_right
 {
@@ -191,11 +192,10 @@ export default {
 
 #showlist .showtitle
 {
-  background: #00C9FF !important;  /* fallback for old browsers */
-  /*! autoprefixer: off */
-  background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF) !important;  /* Chrome 10-25, Safari 5.1-6 */
-   /* autoprefixer: on */
-  background: linear-gradient(to bottom, #92FE9D, #00C9FF) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #232526; 
+  background: -webkit-linear-gradient(to right, #414345, #232526); 
+  background: linear-gradient(to right, #414345, #232526); 
+  font-weight: bold;
   color: transparent !important;
   -webkit-background-clip: text !important;
   /* font-family: "Comic Sans MS"; */
@@ -266,6 +266,7 @@ export default {
   {
     padding-top: 0;
     padding-left: 0;
+    padding-bottom: 0;
   }
   .box_left
   {

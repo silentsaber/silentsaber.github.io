@@ -38,7 +38,7 @@ export default {
   height: 60px;
   width: 100vw;
   z-index: 1000;
-  font-family:Comic Sans MS;
+  font-family:'Times New Roman', Times, serif;
   background: black;
 }
 #nav_title{
@@ -51,6 +51,7 @@ export default {
   font-size:24px;
   color: white;
   animation: neon2 1.5s ease-in-out infinite alternate;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .el-menu-demo{
   position: relative;
@@ -94,10 +95,10 @@ export default {
 #spilt{
   position: absolute;
   bottom:0;
-  height:5px;
+  height:2px;
   width:100vw;
-  background: #00C9FF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #F2F6FC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F2F6FC, #EBEEF5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F2F6FC, #EBEEF5) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 </style>

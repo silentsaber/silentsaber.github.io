@@ -20,7 +20,7 @@
                 width="300"
                 trigger="click"
                 >
-                <el-link @click="clickCopy('zengr21@mails.tsinghua.edu.cn')">zengr21@mails.tsinghua.edu.cn</el-link>
+                <el-link @click="clickCopy('zeng_r17@163.com')">zeng_r17@163.com</el-link>
                 <img src="../../static/imgs/email.svg" width="30" height="30" style="cursor: pointer;" slot="reference"/>
             </el-popover>
             </span>
@@ -31,6 +31,7 @@
             background: #F2F6FC;
         ">
             <p style="font-size:32px;font-weight:bold;">技术栈涉略</p>
+            <span style="font-size:20px;margin-bottom:20px;" class="skill_sum"><b>核心定位</b>："DL+通信"研究者，网站开发爱好者</span>
             <div style="display:flex;flex-direction:row;width:70%;justify-content: space-around;margin-bottom:40px;" class="skill">
             <el-card class="skill-left" :body-style="{display: 'flex',flexDirection: 'column'}" style="width:46%;">
                 <span style="font-size:24px; font-weight:bold;">编程语言</span>
@@ -45,16 +46,18 @@
             <el-card class="skill-right" style="width:46%;">
                 <span style="font-size:24px; font-weight:bold;">软件/框架</span>
                 <el-divider></el-divider>
-                <div class="iconbox"><img src="../../static/imgs/vscode.svg" width="50" height="50"/><span>vscode</span></div>
-                <div class="iconbox"><img src="../../static/imgs/Pycharm.svg" width="50" height="50"/><span>pycharm</span></div>
+                <!-- <div class="iconbox"><img src="../../static/imgs/vscode.svg" width="50" height="50"/><span>vscode</span></div>
+                <div class="iconbox"><img src="../../static/imgs/Pycharm.svg" width="50" height="50"/><span>pycharm</span></div> -->
+                
                 <div class="iconbox"><img src="../../static/imgs/pytorch.svg" width="50" height="50"/><span>pytorch</span></div>
                 <div class="iconbox"><img src="../../static/imgs/Vue.svg" width="50" height="50"/><span>vue.js</span></div>
                 <div class="iconbox"><img src="../../static/imgs/elementui.svg" width="50" height="50"/><span>element-ui</span></div>
                 <div class="iconbox"><img src="../../static/imgs/Nodejs.svg" width="50" height="50"/><span>node.js</span></div>
                 <div class="iconbox"><img src="../../static/imgs/Mongodb.jpg" width="50" height="50"/><span>mongodb</span></div>
+                <div class="iconbox"><img src="../../static/imgs/qt.svg" width="50" height="50"/><span>QT</span></div>
                 <div class="iconbox"><img src="../../static/imgs/python.svg" width="50" height="50"/><span>python</span></div>
                 <div class="iconbox"><img src="../../static/imgs/matlab.svg" width="50" height="50"/><span>matlab</span></div>
-                <div class="iconbox"><img src="../../static/imgs/Android.svg" width="50" height="50"/><span>android</span></div>
+                <div class="iconbox"><img src="../../static/imgs/android-studio.png" width="50" height="50"/><span>AndroidStudio</span></div>
                 <div class="iconbox"><img src="../../static/imgs/vivado.png" width="50" height="50"/><span>vivado</span></div>
                 <div class="iconbox"><img src="../../static/imgs/multisim.jpg" width="50" height="50"/><span>multisim</span></div>
             </el-card>
@@ -62,23 +65,32 @@
         </div>
         <div style="width:100%;min-height:60vh;display:flex;justify-content: center;align-items: center;flex-direction: column;
         background: #909399; 
-        background: -webkit-linear-gradient(to left, #909399, #232526); 
-        background: linear-gradient(to left, #909399, #232526); 
+        background: -webkit-linear-gradient(to right, rgb(144, 147, 153), #909399); 
+        background: linear-gradient(to right, rgb(144, 147, 153), #909399);
         color:white;
         ">
             <p style="font-size:32px;font-weight:bold;">开发案例</p>
-            <div class="example" style="display:flex;flex-direction:row;width:80%;justify-content: space-around;margin-bottom:40px;">
-                <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;">
-                    <span style="font-size:24px; font-weight:bold;">电设网站</span>
-                    <el-divider></el-divider>
+            <div class="example" style="display:flex;flex-direction:row;width:96%;justify-content: space-around;margin-bottom:40px;">
+                <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;background: ghostwhite;">
+                    <div slot="header">
+                        <span style="font-size:24px; font-weight:bold;">电设网站</span>
+                    </div>
+                    <el-image src="../../static/imgs/eedesign2.jpg" style="height:300px;" fit="contain"></el-image>
+                     <span style="padding:20px;">清华大学电子系第二十届电子设计大赛前端开发，主要负责“组队”、“首页”、“介绍”、“文件”等界面及对应界面对接后端。一周培训速成后练手，采用原生html+css+js。</span>
                 </el-card>
-                <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;">
-                    <span style="font-size:24px; font-weight:bold;">队式网站</span>
-                    <el-divider></el-divider>
+                <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;background: ghostwhite;">
+                    <div slot="header">
+                        <span style="font-size:24px; font-weight:bold;">队式网站</span>
+                    </div>
+                    <el-image src="../../static/imgs/eeai.JPG" style="height:300px;" fit="contain"></el-image>
+                    <span style="padding:20px;">清华大学电子系第二十届队式大赛暨第一届人工智能挑战赛“枪林弹雨组”前端开发，主要负责“组队”、“天梯比赛”等界面以及所有界面对接后端。技术栈Vue.js+node.js+mongodb。</span>
                 </el-card>
-                <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;">
-                    <span style="font-size:24px; font-weight:bold;">学推论坛推广小程序</span>
-                    <el-divider></el-divider>
+                <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;background: ghostwhite;">
+                    <div slot="header">
+                        <span style="font-size:24px; font-weight:bold;">学推论坛小程序</span>
+                    </div>
+                    <el-image src="../../static/imgs/thusastminiprogram.jpg" style="height:300px;" fit="contain"></el-image>
+                    <span style="padding:20px;">清华大学第一届学术推进论坛推广宣传微信小程序开发，负责完整的程序设计流程。一周内(2018.12.16-2018.12.23)累计访问量超过1w，累计访问人数超过3000。</span>
                 </el-card>
             </div>
         </div>
@@ -86,9 +98,21 @@
             color:black;
             background: #F2F6FC;
         ">
-            <p style="font-size:32px;font-weight:bold;">获奖情况/科研经历</p>
-            <div class="example" style="display:flex;flex-direction:row;width:80%;justify-content: space-around;margin-bottom:40px;">
-
+            <p style="font-size:32px;font-weight:bold;">项目研究</p>
+            <div class="experience" style="display:flex;flex-direction:column;width:36%;justify-content: center;margin-bottom:40px; padding:20px;">
+                <h2>研究</h2>
+                <span>▶ 高考机器人: 基于知识图谱解决"解析几何"问题</span>
+                <span>▶ 跨摄像头追踪: 基于不同时间多个摄像头图像追踪同一个对象的行迹(比Re-ID更复杂)</span>
+                <span>▶ <a href="https://ieeexplore.ieee.org/document/9791347" target="_blank">低比特纠错编码设计</a>: 基于深度学习实现接收机低比特量化下的纠错编码设计</span>
+                <h2>项目</h2>
+                <span>▶ 游戏合集: 基于c++实现五子棋、数字华容道(15-puzzle)、贪吃蛇等多个小游戏</span>
+                <span>▶ 简易画图: 基于QT实现简单绘图、三维茶壶绘制及立体旋转</span>
+                <span>▶ 新闻App: 基于Android Studio实现某新闻RSS消息呈现的Android程序</span>
+                <span>▶ 个人网站: 基于Vue.js+Node.js+MongoDB搭建个人主页</span>
+                <span>▶ CPU流水线: 基于Verilog在FPGA上实现流水线CPU设计</span>
+                <span>▶ SDN防火墙: 基于floodlight和web前端控制“软件定义网络(SDN)”的路由器规则</span>
+                <span>▶ 蜘蛛机器人: 树莓派硬件程序控制八足蜘蛛机器人室内自动巡航寻找并扫描二维码</span>
+                <span>▶ 机器人竞速: 树莓派硬件程序控制直立机器人穿越崎岖且有障碍的复杂赛道</span>
             </div>
         </div>
         
@@ -121,6 +145,11 @@ export default{
 }
 </script>
 <style>
+#index img:hover
+{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
 .skill .iconbox
 {
     display: flex;
@@ -131,13 +160,31 @@ export default{
     height:100px;
     float: left;
 }
+.example .el-card__header
+{
+    background:#E4E7ED;
+}
+.example .el-card__body
+{
+    padding:0;
+}
+
 @media (max-width: 700px) {
     .skill-left,.skill-right{
         width:100%!important;
     }
-    .skill
+    .skill, .example, .experience
     {
         flex-direction: column!important;
+        width: 100% !important;
+    }
+    .experience h2, .experience span
+    {
+        padding: 0 20px !important;
+    }
+    .example .el-card
+    {
+        width: 100%!important;
     }
     .index_img
     {
@@ -151,6 +198,10 @@ export default{
     .index_des
     {
         font-size:16px !important;
+    }
+    .skill_sum
+    {
+        padding: 10px;
     }
 }
 </style>

@@ -42,6 +42,18 @@ export default {
     },
     mounted()
     {
+      var width = window.screen.width;
+      console.log(width);
+      if(width<720)
+      {
+        this.showmenu=false;
+        this.whatmode="vertical";     
+      }
+      else
+      {
+        // this.showmenu=false;
+        this.whatmode="horizontal"; 
+      }
       window.onresize = () => {
         return (() => {
           var width = window.screen.width;

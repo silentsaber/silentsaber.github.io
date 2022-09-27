@@ -264,7 +264,7 @@ export default {
   }
   #profile
   {
-    padding-top: 0;
+    padding-top: 60px;
     padding-left: 0;
     padding-bottom: 0;
   }

@@ -170,6 +170,10 @@ export default{
 }
 
 @media (max-width: 700px) {
+    #index
+    {
+        padding-top: 60px;    
+    }
     .skill-left,.skill-right{
         width:100%!important;
     }

@@ -42,7 +42,7 @@ export default {
     },
     mounted()
     {
-      var width = window.screen.width;
+      var width = document.body.clientWidth;//window.screen.width;
       console.log(width);
       if(width<720)
       {
@@ -56,7 +56,7 @@ export default {
       }
       window.onresize = () => {
         return (() => {
-          var width = window.screen.width;
+          var width = document.body.clientWidth;//window.screen.width;
           console.log(width);
           if(width<720)
           {

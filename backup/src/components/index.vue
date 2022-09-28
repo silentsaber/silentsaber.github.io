@@ -71,27 +71,24 @@
         ">
             <p style="font-size:32px;font-weight:bold;">开发案例</p>
             <div class="example" style="display:flex;flex-direction:row;width:96%;justify-content: space-around;margin-bottom:40px;">
-                <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;background: ghostwhite;">
-                    <div slot="header">
-                        <span style="font-size:24px; font-weight:bold;">电设网站</span>
-                    </div>
-                    <el-image src="../../static/imgs/eedesign2.jpg" style="height:300px;" fit="contain"></el-image>
+                <!-- <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;background: ghostwhite;"> -->
+                <div style="width:30%;display:flex;flex-direction:column;" class="example_li">
+                        <p style="font-size:24px; font-weight:bold;text-align: center;    text-shadow: 0 0 20px lightgoldenrodyellow;">电设网站</p>
+                    <el-image src="../../static/imgs/eedesign2.jpg" style="box-shadow: 0 0 20px;height:200px;" fit="cover"></el-image>
                      <span style="padding:20px;">清华大学电子系第二十届电子设计大赛前端开发，主要负责“组队”、“首页”、“介绍”、“文件”等界面及对应界面对接后端。一周培训速成后练手，采用原生html+css+js。</span>
-                </el-card>
-                <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;background: ghostwhite;">
-                    <div slot="header">
-                        <span style="font-size:24px; font-weight:bold;">队式网站</span>
-                    </div>
-                    <el-image src="../../static/imgs/eeai.JPG" style="height:300px;" fit="contain"></el-image>
+                </div>
+                <!-- <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;background: ghostwhite;"> -->
+                <div style="width:30%;display:flex;flex-direction:column;" class="example_li">
+                    <p style="font-size:24px; font-weight:bold;text-align: center;    text-shadow: 0 0 20px lightgoldenrodyellow;">队式网站</p>
+                    <el-image src="../../static/imgs/eeai.JPG" style="box-shadow: 0 0 20px;height:200px;" fit="cover"></el-image>
                     <span style="padding:20px;">清华大学电子系第二十届队式大赛暨第一届人工智能挑战赛“枪林弹雨组”前端开发，主要负责“组队”、“天梯比赛”等界面以及所有界面对接后端。技术栈Vue.js+node.js+mongodb。</span>
-                </el-card>
-                <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;background: ghostwhite;">
-                    <div slot="header">
-                        <span style="font-size:24px; font-weight:bold;">学推论坛小程序</span>
-                    </div>
-                    <el-image src="../../static/imgs/thusastminiprogram.jpg" style="height:300px;" fit="contain"></el-image>
+                </div>
+                <!-- <el-card :body-style="{display: 'flex',flexDirection: 'column'}" style="width:30%;background: ghostwhite;"> -->
+                <div style="width:30%;display:flex;flex-direction:column;" class="example_li">
+                    <p style="font-size:24px; font-weight:bold;text-align: center;    text-shadow: 0 0 20px lightgoldenrodyellow;">学推论坛小程序</p>
+                    <el-image src="../../static/imgs/thusastminiprogram.jpg" style="height:200px;" fit="contain"></el-image>
                     <span style="padding:20px;">清华大学第一届学术推进论坛推广宣传微信小程序开发，负责完整的程序设计流程。一周内(2018.12.16-2018.12.23)累计访问量超过1w，累计访问人数超过3000。</span>
-                </el-card>
+                </div>
             </div>
         </div>
         <div style="width:100%;min-height:60vh;display:flex;justify-content: center;align-items: center;flex-direction: column;
@@ -160,14 +157,18 @@ export default{
     height:100px;
     float: left;
 }
-.example .el-card__header
+.example img
+{
+    object-position: top;
+}
+/* .example .el-card__header
 {
     background:#E4E7ED;
 }
 .example .el-card__body
 {
     padding:0;
-}
+} */
 
 @media (max-width: 700px) {
     #index
@@ -186,7 +187,7 @@ export default{
     {
         padding: 0 20px !important;
     }
-    .example .el-card
+    .example .example_li
     {
         width: 100%!important;
     }

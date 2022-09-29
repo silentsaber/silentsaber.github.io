@@ -177,17 +177,19 @@ export default {
 
 #showlist .showdes
 {
-  /* margin-top:2vh; */
   width: 100%;
-  font-family: "Comic Sans MS" !important;
-  background: #485563 !important;  /* fallback for old browsers */
-  /*! autoprefixer: off */
-  background: -webkit-linear-gradient(to right, #29323c, #485563) !important;  /* Chrome 10-25, Safari 5.1-6 */
-   /* autoprefixer: on */
-  background: linear-gradient(to right, #29323c, #485563) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: transparent !important;
-  -webkit-background-clip: text !important;
-  font-size:18px !important;
+  font-family: "Comic Sans MS" ;
+  background: #485563 ;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29323c, #485563) ;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29323c, #485563) ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: transparent ;
+  -webkit-background-clip: text ;
+  font-size:18px;
+}
+
+#showlist .showdes i
+{
+  color:black;
 }
 
 #showlist .showtitle
@@ -198,7 +200,6 @@ export default {
   font-weight: bold;
   color: transparent !important;
   -webkit-background-clip: text !important;
-  /* font-family: "Comic Sans MS"; */
   font-family: "Helvetica Neue" !important;
   font-size: 24px !important;
   margin-bottom: 10px;
